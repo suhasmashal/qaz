@@ -1,1 +1,156 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.4 on win32)" generated="20210907 12:53:38.775" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\projects\robotframew\Tests">
+<suite id="s1-s1" name="Testcase" source="C:\projects\robotframew\Tests\testcase.robot">
+<test id="s1-s1-t1" name="Observe user is able to test sanity flow">
+<kw name="Given User Launch browser for flipkart app">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.flipkart.com/</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210907 12:53:40.068" level="INFO">Opening browser 'gc' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20210907 12:53:40.067" endtime="20210907 12:53:46.940"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210907 12:53:46.941" endtime="20210907 12:53:47.275"/>
+</kw>
+<status status="PASS" starttime="20210907 12:53:40.067" endtime="20210907 12:53:47.276"/>
+</kw>
+<kw name="When User lands on Login form">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input</arg>
+<arg>8660473029</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210907 12:53:47.295" level="INFO">Typing text '8660473029' into text field 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20210907 12:53:47.295" endtime="20210907 12:53:47.527"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input</arg>
+<arg>Flipkart@007</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210907 12:53:47.536" level="INFO">Typing text 'Flipkart@007' into text field 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20210907 12:53:47.527" endtime="20210907 12:53:47.700"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210907 12:53:47.701" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button'.</msg>
+<status status="PASS" starttime="20210907 12:53:47.700" endtime="20210907 12:53:47.800"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 12:53:52.812" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210907 12:53:47.801" endtime="20210907 12:53:52.813"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]/div/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210907 12:53:52.814" endtime="20210907 12:53:52.868"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]/div/img</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210907 12:53:52.869" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]/div/img'.</msg>
+<status status="PASS" starttime="20210907 12:53:52.869" endtime="20210907 12:53:53.171"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210907 12:53:53.172" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]'.</msg>
+<status status="PASS" starttime="20210907 12:53:53.171" endtime="20210907 12:53:53.495"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[2]/a[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210907 12:53:53.495" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[2]/a[2]'.</msg>
+<status status="PASS" starttime="20210907 12:53:53.495" endtime="20210907 12:53:53.801"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[2]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 12:53:53.805" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[2]/a[2]'.</msg>
+<status status="PASS" starttime="20210907 12:53:53.802" endtime="20210907 12:53:53.888"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 12:53:56.896" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210907 12:53:53.888" endtime="20210907 12:53:56.896"/>
+</kw>
+<status status="PASS" starttime="20210907 12:53:47.295" endtime="20210907 12:53:56.896"/>
+</kw>
+<kw name="When User lands on electronics page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input</arg>
+<arg>realme C20 (Cool Blue, 32 GB)</arg>
+<arg>(2 GB RAM)</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210907 12:53:56.899" level="INFO">Typing text 'realme C20 (Cool Blue, 32 GB)' into text field 'xpath=//*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20210907 12:53:56.899" endtime="20210907 12:53:57.176"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210907 12:53:57.177" level="INFO">Clicking button 'xpath=//*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/button'.</msg>
+<status status="PASS" starttime="20210907 12:53:57.177" endtime="20210907 12:53:57.438"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 12:54:01.443" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210907 12:53:57.439" endtime="20210907 12:54:01.443"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[3]/div/div[2]/div[2]/div/div/div/a/div[2]/div[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 12:54:01.443" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/div[3]/div/div[2]/div[2]/div/div/div/a/div[2]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20210907 12:54:01.443" endtime="20210907 12:54:01.575"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 12:54:05.579" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210907 12:54:01.576" endtime="20210907 12:54:05.595"/>
+</kw>
+<status status="PASS" starttime="20210907 12:53:56.896" endtime="20210907 12:54:05.595"/>
+</kw>
+<kw name="Then Add to cart">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210907 12:54:05.595" endtime="20210907 12:54:05.634"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210907 12:54:05.635" level="INFO">Clicking button 'xpath=//*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button'.</msg>
+<status status="PASS" starttime="20210907 12:54:05.635" endtime="20210907 12:54:05.788"/>
+</kw>
+<status status="PASS" starttime="20210907 12:54:05.595" endtime="20210907 12:54:05.788"/>
+</kw>
+<tag>regression</tag>
+<tag>sanity</tag>
+<status status="PASS" starttime="20210907 12:53:40.063" endtime="20210907 12:54:05.790"/>
+</test>
+<status status="PASS" starttime="20210907 12:53:38.857" endtime="20210907 12:54:05.796"/>
+</suite>
+<status status="PASS" starttime="20210907 12:53:38.810" endtime="20210907 12:54:05.801"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testcase">Tests.Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
